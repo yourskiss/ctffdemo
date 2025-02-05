@@ -1,1 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten&family=Inter:opsz,wght@14..32,100..900&display=swap');
+
 @import "tailwindcss";
+@theme {
+    /* screen size */
+    --breakpoint-xs: 480px;
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-2xl: 1280px;
+ 
+    /* font size */
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-md: 1.25rem;
+    --text-lg: 1.5rem;
+    --text-xl: 1.75rem;
+    --text-xl2: 2rem;
+    --text-xl3: 2.5rem;
+    --text-xl4: 3rem;
+    --text-xl5: 3.5rem;
+    --text-xl6: 4rem;
+    --text-xl7: 4.5rem;
+    --text-xl8: 5rem;
+    --text-xl9: 6rem;
+
+    /* spacing */
+    --spacing-1: 0.0625rem;
+    --spacing-2: 0.125rem;
+    --spacing-4: 0.25rem;
+    --spacing-8: 0.5rem;
+    --spacing-12: 0.75rem;
+    --spacing-14: 0.875rem;
+    --spacing-16: 1rem;
+    --spacing-20: 1.25rem;
+    --spacing-24: 1.5rem;
+    --spacing-32: 2rem;
+    --spacing-40: 2.5rem;
+    --spacing-48: 3rem;
+    --spacing-56: 3.5rem;
+    --spacing-64: 4rem;
+    --spacing-72: 4.5rem;
+    --spacing-80: 5rem;
+    --spacing-96: 6rem;
+
+    /* line height */
+    --leading-none: 1;
+    --leading-tight: 1.125;
+    --leading-normal: 1.5;
+    --leading-loose: 2;
+
+    /* font family */
+    --font-primary: "Inter", sans-serif;
+    --font-secondary: "Gluten", sans-serif;
+
+    /* font weight */
+    --font-weight-normal: 400;
+    --font-weight-semibold: 600;
+ 
+    /* font neutral color */
+    --color-neutral-0: #ffffff;
+    --color-neutral-1: #fdfdfd;
+    --color-neutral-2: #fcfcfb;
+    --color-neutral-3: #fafafa;
+    --color-neutral-4: #f9f9f8;
+    --color-neutral-5: #f7f7f6;
+    --color-neutral-10: #dfdedd;
+    --color-neutral-20: #c6c5c3;
+    --color-neutral-30: #aeadaa;
+    --color-neutral-40: #969491;
+    --color-neutral-50: #7d7b77;
+    --color-neutral-60: #65625e;
+    --color-neutral-70: #4d4a45;
+    --color-neutral-80: #34312b;
+    --color-neutral-90: #1c1812;
+    --color-neutral-100: #000000;
+
+    /* font tan color */
+    --color-tan-lighter: #f1ece1;
+    --color-tan-light: #e4d9c3;
+    --color-tan-default: #ddcfb4;
+    --color-tan-dark: #b1a690;
+    --color-tan-darker: #857c6c;
+
+    /* font brown color */
+    --color-brown-lighter:#978f84;
+    --color-brown-light:#74695b;
+    --color-brown-default:#514432;
+    --color-brown-dark:#31291e;
+    --color-brown-darker: #201b14;
+  }
+
+    /* typography */
+    .heading-large {
+        font-family: theme(--font-primary);
+        line-height: theme(--leading-tight);
+        font-weight: theme(--font-weight-semibold);
+        font-size: theme(--text-5xl);
+    }
+    .heading-medium {
+        font-family: theme(--font-primary);
+        line-height: theme(--leading-tight);
+        font-weight: theme(--font-weight-semibold);
+        font-size: theme(--text-4xl);
+    }
+    .heading-default {
+        font-family: theme(--font-primary);
+        line-height: theme(--leading-tight);
+        font-weight: theme(--font-weight-semibold);
+        font-size: theme(--text-2xl);
+    }
+    .heading-small {
+        font-family: theme(--font-primary);
+        line-height: theme(--leading-tight);
+        font-weight: theme(--font-weight-semibold);
+        font-size: theme(--text-2xl);
+    }
+    .body-large {
+        font-family: theme(--font-primary);
+        line-height: theme(--leading-normal);
+        font-weight: theme(--font-weight-normal);
+        font-size: theme(--text-2xl);
+    }
+    .body-medium {
+        font-family: theme(--font-primary);
+        line-height: theme(--leading-loose);
+        font-weight: theme(--font-weight-normal);
+        font-size: theme(--text-md);
+    }
+    .body-default {
+        font-family: theme(--font-primary);
+        line-height: theme(--leading-loose);
+        font-weight: theme(--font-weight-normal);
+        font-size: theme(--text-base);
+    }
+    .body-small {
+        font-family: theme(--font-primary);
+        line-height: theme(--leading-loose);
+        font-weight: theme(--font-weight-normal);
+        font-size: theme(--text-sm);
+    }
+    .body-caption {
+        font-family: theme(--font-primary);
+        line-height: theme(--leading-loose);
+        font-weight: theme(--font-weight-normal);
+        font-size: theme(--text-xs);
+    }
+    .accent {
+        font-family: theme(--font-secondary);
+        line-height: theme(--leading-normal);
+        font-weight: theme(--font-weight-normal);
+        font-size: theme(--text-2xl);
+    }
+
+  
