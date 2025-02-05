@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import headerdata  from '../assets/data/header.json';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 import weblogo from "./../assets/images/logo.svg"
 import mobilelogo from "./../assets/images/LogoSmall.svg"
@@ -14,10 +14,10 @@ export default function Header() {
   return (
     <header className="w-full bg-neutral-5 flex justify-center">
          <div className="w-full max-w-[1024px] px-16 lg:px-0 py-8 flex justify-between items-center relative">
-            <aside className="">
+            <Link to="/">
                 <img src={weblogo} alt="logo" className="hidden lg:block" />
                 <img src={mobilelogo} alt="logo" className="block lg:hidden" />
-            </aside>
+            </Link>
             <ul className="hidden lg:flex justify-end items-center gap-40">
                 {headerdata.map((item) => (
                     <li key={item.id} className='body-default '>
