@@ -47,8 +47,9 @@
     /* line height */
     --leading-none: 1;
     --leading-tight: 1.125;
-    --leading-normal: 1.5;
-    --leading-loose: 2;
+    --leading-normal: 1.25;
+    --leading-loose: 1.5;
+
 
     /* font family */
     --font-primary: "Inter", sans-serif;
@@ -153,4 +154,7 @@
         font-size: theme(--text-2xl);
     }
 
-  
+ 
+
+.activeted {  background: url('./assets/images/CaretUp.svg') no-repeat right center; pointer-events: none; user-select: none; }
+.noactived {  background: url('./assets/images/CaretDown.svg') no-repeat right center; cursor: pointer; }
